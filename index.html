@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  
   <div id="root"></div>
   <script type="text/babel">
     const se = new Audio('tada.wav');
@@ -20,7 +21,7 @@
       const [verified, setVerified] = React.useState(false);
       React.useEffect(() => {
         grecaptcha.render('html_element', {
-          sitekey: '6Ld8ZigmAAAAALdagKr3AeAdLSmpgtZ045HH_n1-',
+          sitekey: '6Ld8ZigmAAAAAHfmjGux-Ul6Q_yal9t6l0dPHNxa',
           callback: (response) => {
             se.play();
             setVerified(true);
@@ -34,7 +35,7 @@
               <div className="hero-body">
                 <div className="container has-text-centered">
                   <p className="title">
-                    おめでとうございます。あなたは人間です。
+                    Maliek Galant
                   </p>
                   <p className="subtitle">
                     ご安心ください。あなたはテストを突破することにより人間だと証明されました。
@@ -50,7 +51,7 @@
                     Maliek Galant
                   </p>
                   <p className="subtitle">
-                    CV。
+                    Verification
                   </p>
                   <div style={{
                     marginRight: 'auto',
