@@ -7,50 +7,21 @@
   <title>Maliek Galant</title>
   <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-       
+  <script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineOutOfPageSlot('/22826216928/Sponsor', 'div-gpt-ad-1685031352205-0').setTargeting('PageAds', ['genders']).addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().setTargeting('Native', ['Maliek']);
+    googletag.enableServices();
+  });
+</script> 
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
   <!-- Don't use this in production: -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script>
-      window.googletag = window.googletag || {cmd: []};
 
-      // GPT ad slots
-      var interstitialSlot, staticSlot;
-
-      googletag.cmd.push(function() {
-        // Define a web interstitial ad slot.
-        interstitialSlot = googletag.defineOutOfPageSlot(
-            '/6355419/Travel/Europe/France/Paris',
-            googletag.enums.OutOfPageFormat.INTERSTITIAL);
-
-        // Slot returns null if the page or device does not support interstitials.
-        if (interstitialSlot) {
-          interstitialSlot.addService(googletag.pubads());
-
-          document.getElementById('status').innerText = 'Interstitial is loading...';
-
-          // Add event listener to enable navigation once the interstitial loads.
-          // If this event doesn't fire, try clearing local storage and refreshing
-          // the page.
-          googletag.pubads().addEventListener('slotOnload', function(event) {
-            if (interstitialSlot === event.slot) {
-              document.getElementById('link').style.display = 'block';
-              document.getElementById('status').innerText = 'Interstitial is loaded.';
-            }
-          });
-        }
-
-        // Define static ad slots.
-        staticSlot = googletag.defineSlot(
-            '/6355419/Travel/Europe', [100, 100], 'static-ad-1')
-          .addService(googletag.pubads());
-
-        // Enable SRA and services.
-        googletag.pubads().enableSingleRequest();
-        googletag.enableServices();
-      });
-    </script>
+  
     <style>
       #link {
         display: none;
@@ -64,22 +35,20 @@
 </head>
 
 <body>
-  
-  <div id="gpt-passback">
-  <script>
-    window.googletag = window.googletag || {cmd: []};
-    googletag.cmd.push(function() {
-    googletag.defineSlot('/22826216928/Travel', [320, 50], 'gpt-passback').addService(googletag.pubads()).setTargeting('PageAds', ['genders']);
-    googletag.enableServices();
-    googletag.display('gpt-passback');
-    });
-  </script>
+  <!-- /22826216928/Sponsor -->
+<div id='div-gpt-ad-1685031352205-0'>
+<script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1685031352205-0'); });
+</script>
 </div>
+  
+  
+  
 
     <div class="content">
-      <span id="status">Web interstitial is not supported on this page.</span>
+      <span id="status">Ads unsupported on this page.</span>
       <p>
-        <a id="link" href="https://www.example.com/">TRIGGER INTERSTITIAL</a>
+        <a id="link" href="https://www.maliek.co.za/">Home</a>
       </p>
       <p>
         <!--
@@ -87,21 +56,12 @@
           adding a data-google-interstitial="false" attribute to the anchor element or
           any ancestor of the anchor element.
         -->
-        <a data-google-interstitial="false" href="https://www.example.com/">
-          This link will never trigger an interstitial
+        <a data-google-interstitial="false" href="https://www.maliek.co.za/">
+          This link wont display ads
         </a>
       </p>
     </div>
-    <script>
-        googletag.cmd.push(function() {
-          // Ensure the first call to display comes after static ad slot
-          // divs are defined.
-          googletag.display(staticSlot);
-        });
-    </script>
-  
-  
-
+    
     
     
     
