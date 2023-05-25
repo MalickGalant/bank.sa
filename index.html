@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Maliek Galant</title>
   <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  
-       
   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-
+       
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
   <!-- Don't use this in production: -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -66,6 +65,16 @@
 
 <body>
   
+  <div id="gpt-passback">
+  <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/22826216928/Travel', [320, 50], 'gpt-passback').addService(googletag.pubads()).setTargeting('PageAds', ['genders']);
+    googletag.enableServices();
+    googletag.display('gpt-passback');
+    });
+  </script>
+</div>
 
     <div class="content">
       <span id="status">Web interstitial is not supported on this page.</span>
